@@ -1,6 +1,7 @@
 import React from 'react';
-import './index.css'
-import Logo from '../../logo.png'
+import './index.css';
+import { NavLink } from 'react-router-dom';
+import Logo from '../../img/logo.png';
 
 const Navbar = () =>
     <div className="navigation">
@@ -9,9 +10,24 @@ const Navbar = () =>
                 <div className="container">
                     <a href="#" className="brand-logo"><img src={Logo}></img></a>
                     <ul id="nav-mobile" className="nav-elts right hide-on-med-and-down">
-                        <li><a href="#" className="acc nav-elts">Home</a></li>
-                        <li><a href="#" className="nav-elts">Projects</a></li>
-                        <li><a href="#" className="nav-elts">Contact</a></li>
+                        <li><NavLink
+                            exact to="/"
+                            className="nav-elts"
+                            activeClassName="active">
+                            Home
+                            </NavLink></li>
+                        <li><NavLink
+                            to="/Projects"
+                            className="nav-elts"
+                            activeClassName="active">
+                            Projects
+                            </NavLink></li>
+                        <li><NavLink
+                            to="/Contact"
+                            className="nav-elts"
+                            activeClassName="active">
+                            Contact
+                            </NavLink></li>
                     </ul>
                 </div>
 

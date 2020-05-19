@@ -15,7 +15,6 @@ const Home = () =>
                 <div id="content">
                     <Typist>
                         A passionate hobbyist full-stack web developer.
-
                     </Typist>
                 </div>
             </div>
