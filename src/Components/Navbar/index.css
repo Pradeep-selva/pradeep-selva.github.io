@@ -1,0 +1,27 @@
+nav{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+img{
+    padding-top: 1%;
+    margin-top: 3%;
+    height: 1.8em;
+}
+
+.brand-logo{
+    position:fixed;
+    margin-top: 0.1%;
+    left:5%
+}
+
+.acc{
+    border-bottom: 2.5px solid #322c54;
+}
+
+.nav-elts{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:#212120;
+}
+

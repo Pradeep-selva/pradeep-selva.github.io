@@ -1,0 +1,64 @@
+body{
+    background: url(../../background.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    background: rgb(20,8,51);
+    background: linear-gradient(90deg, rgba(20,8,51,1) 0%, rgba(95,15,124,1) 51%, rgba(166,0,255,1) 100%);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 3%;
+    border-radius: 5px 25px;
+    color: blanchedalmond;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    position:fixed;
+    top:65%;
+    left: 35%;
+}
+
+.bio{
+    position: fixed;
+    top:40%;
+    left:-5%;
+    color: black;
+    margin-top: -50px;
+    margin-left: -100px;
+    padding-right: 30%;
+    padding-left: 30%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 10px;
+}
+
+#title{
+    font-size: 100px;
+    font-weight: 500;
+    text-shadow: 4px 5px 10px rgba(25,11,7,0.73);
+}
+
+#content{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    padding-top: 3%;
+    text-shadow: 4px 5px 10px rgba(25,11,7,0.56);
+}
+
+@keyframes nav{
+    from{
+        opacity: 0;
+        font-size:0px;
+    }
+    to{
+        opacity: 1;
+        font-size: 40px;
+    }
+}
