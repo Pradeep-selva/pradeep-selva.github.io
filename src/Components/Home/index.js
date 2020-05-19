@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css'
 import Typist from 'react-typist';
+import { Link } from 'react-router-dom';
 import Sidenav from '../Sidenav/index';
 import Navbar from '../Navbar/index';
 
@@ -18,7 +19,9 @@ const Home = () =>
                     </Typist>
                 </div>
             </div>
-            <button>About Me</button>
+            <div id="about">
+                <Link to="/About">About Me</Link>
+            </div>
         </div>
         <Sidenav />
     </div>
