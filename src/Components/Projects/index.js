@@ -13,6 +13,8 @@ import Pong from '../../img/pong.png'
 import Pokemon from '../../img/pokemon.png'
 import Yelp from '../../img/yelp.png'
 import HackerNews from '../../img/hacker-news.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const styles = StyleSheet.create({
     fadeInUp: {
@@ -32,6 +34,9 @@ class Projects extends Component {
     componentDidMount() {
         let materialBox = document.querySelectorAll('.materialboxed');
         M.Materialbox.init(materialBox, {});
+        AOS.init({
+            duration: 1000
+        })
     }
 
     render() {

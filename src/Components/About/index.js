@@ -61,7 +61,7 @@ class About extends Component {
                         </div>
                         <div class={skills_section}>
                             <h3 class="grey-text text-darken-4">-Skills-</h3>
-                            <ul class="flow-text grey-text text-darken-4">
+                            <ul class="flow-text grey-text text-darken-4" id="skills">
                                 <li>○ Python</li>
                                 <li>○ Javascript</li>
                                 <li>○ C++</li>

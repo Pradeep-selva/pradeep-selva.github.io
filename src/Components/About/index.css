@@ -9,6 +9,10 @@
     padding-top: 7%;
 }
 
+#skills{
+    text-align: left;
+}
+
 hr.style {
     border: 0;
     height: 1px;
