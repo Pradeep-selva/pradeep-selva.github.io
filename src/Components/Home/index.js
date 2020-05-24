@@ -10,6 +10,7 @@ const Home = () =>
     <div className="home">
         <Navbar />
         <div className="container">
+            <div className="space"></div>
             <div className="bio">
                 <h1 id="title">Pradeep Selva</h1>
                 <hr></hr>
@@ -19,7 +20,7 @@ const Home = () =>
                     </Typist>
                 </div>
             </div>
-            <div id="about">
+            <div id="about" className="hide-on-med-and-down">
                 <Link to="/About">About Me</Link>
             </div>
         </div>

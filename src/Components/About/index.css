@@ -1,0 +1,22 @@
+.rounded{
+    border-radius: 50%;
+    height:200px;
+    padding-top: 15x;
+}
+
+#about{
+    padding-bottom: 1%;
+    padding-top: 7%;
+}
+
+hr.style {
+    border: 0;
+    height: 1px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.chart-radar{
+    margin-bottom: 3%;
+}

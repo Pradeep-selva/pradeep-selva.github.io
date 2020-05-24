@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
+import { fadeInUp, fadeInDown } from 'react-animations';
+import { StyleSheet, css } from 'aphrodite';
 import './index.css'
 import M from 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -11,6 +14,18 @@ import Pokemon from '../../img/pokemon.png'
 import Yelp from '../../img/yelp.png'
 import HackerNews from '../../img/hacker-news.png'
 
+const styles = StyleSheet.create({
+    fadeInUp: {
+        animationName: fadeInUp,
+        animationDuration: '1s'
+    },
+    fadeInDown: {
+        animationName: fadeInDown,
+        animationDuration: '1s'
+    }
+})
+//GH-CARD
+const cardStyle = classNames("card", css(styles.fadeInUp))
 
 class Projects extends Component {
 
@@ -22,11 +37,13 @@ class Projects extends Component {
     render() {
         return (<div className="projects">
             <Navbar />
-            <h1>Projects</h1>
+            <div className={css(styles.fadeInDown)}>
+                <h1>Projects</h1>
+            </div>
             <section className="container section" id="projects">
                 <div className="row">
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle} >
                             <div className="card-image">
                                 <img src={FaceDetect} alt="face-detect" className="z-depth-3 responsive-img materialboxed" />
                                 <span className="card-title">Face And Eye Detector</span>
@@ -44,7 +61,7 @@ class Projects extends Component {
                     </div>
 
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Weather} alt="weather" className="z-depth-3 responsive-img materialboxed" />
                                 <span className="card-title" id="weather">Weather Website</span>
@@ -62,7 +79,7 @@ class Projects extends Component {
                         </div>
                     </div>
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Pong} alt="pong" className="z-depth-3 responsive-img materialboxed" />
                                 <span className="card-title">Multiplayer Pong Game</span>
@@ -82,7 +99,7 @@ class Projects extends Component {
 
                 <div className="row">
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Pokemon} alt="pokemon" className="z-depth-3 responsive-img materialboxed" />
                                 <span className="card-title" id="weather">Tensorflow Pokemon Predictor</span>
@@ -101,7 +118,7 @@ class Projects extends Component {
                     </div>
 
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Yelp} alt="yelp" className="z-depth-3 responsive-img materialboxed" id="yelp" />
                                 <span className="card-title" id="weather">Yelp Camp</span>
@@ -120,7 +137,7 @@ class Projects extends Component {
                         </div>
                     </div>
                     <div className="col s12 l4">
-                        <div className="card">
+                        <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={HackerNews} alt="hacker-news" className="z-depth-3 responsive-img materialboxed" />
                                 <span className="card-title" id="weather">Hacker News Clone</span>
@@ -142,7 +159,7 @@ class Projects extends Component {
                 <a href="#">View All</a>
                 <p>&nbsp;</p>
             </div>
-        </div>);
+        </div >);
     }
 }
 

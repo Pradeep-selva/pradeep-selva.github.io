@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../img/logo.png';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import 'materialize-css/dist/css/materialize.min.css';
-import SidenavBg from '../../img/sidenav-bg.jpg';
 import Avatar from '../../img/avatar.jpg'
 
 
@@ -19,7 +18,7 @@ class Navbar extends Component {
         return (
             <div className="navigation">
                 <nav>
-                    <div class="nav-wrapper">
+                    <div className="nav-wrapper">
                         <div className="container">
                             <a href="" className="sidenav-trigger" data-target="mobile-menu">
                                 <i id="hamburger" className="material-icons">menu</i>
@@ -31,6 +30,12 @@ class Navbar extends Component {
                                     className="nav-elts"
                                     activeClassName="active">
                                     Home
+                            </NavLink></li>
+                                <li><NavLink
+                                    to="/About"
+                                    className="nav-elts"
+                                    activeClassName="active">
+                                    About
                             </NavLink></li>
                                 <li><NavLink
                                     to="/Projects"

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css'
 
+
 const Sidenav = () =>
     <div className="sidenavigation">
         <ul className="side-nav right hide-on-med-and-down">
