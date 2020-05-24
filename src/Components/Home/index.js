@@ -4,6 +4,7 @@ import Typist from 'react-typist';
 import { Link } from 'react-router-dom';
 import Sidenav from '../Sidenav/index';
 import Navbar from '../Navbar/index';
+import Foot from '../Footer/index';
 
 
 const Home = () =>
@@ -25,6 +26,7 @@ const Home = () =>
             </div>
         </div>
         <Sidenav />
+        <Foot />
     </div>
 
 

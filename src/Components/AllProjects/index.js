@@ -6,6 +6,8 @@ import ProjectList from '../ProjectList/index';
 import { fadeInUp } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import classNames from 'classnames';
+import Loading from '../Loading/index'
+
 
 const styles = StyleSheet.create({
     fadeInUp: {
@@ -64,7 +66,7 @@ class AllProjects extends Component {
                                         <ProjectList data={data} />
                                     </div>
                                 </div> :
-                                <h1>Loading...</h1>
+                                <Loading />
                         ) :
                         (
                             <h6>{error}</h6>

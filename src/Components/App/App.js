@@ -5,7 +5,6 @@ import 'materialize-css/dist/css/materialize.min.css';
 import Home from '../Home/index'
 import Projects from '../Projects/index'
 import About from '../About/index'
-import Foot from '../Footer/index'
 import AllProjects from '../AllProjects/index'
 
 
@@ -21,7 +20,6 @@ class App extends Component {
             <Route path="/AllProjects" component={AllProjects} />
           </div>
         </Router>
-        <Foot />
       </div>
     );
   }
