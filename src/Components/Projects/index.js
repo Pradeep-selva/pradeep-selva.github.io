@@ -15,6 +15,8 @@ import Yelp from '../../img/yelp.png'
 import HackerNews from '../../img/hacker-news.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom'
+
 
 const styles = StyleSheet.create({
     fadeInUp: {
@@ -26,7 +28,7 @@ const styles = StyleSheet.create({
         animationDuration: '1s'
     }
 })
-//GH-CARD
+
 const cardStyle = classNames("card", css(styles.fadeInUp))
 
 class Projects extends Component {
@@ -161,7 +163,7 @@ class Projects extends Component {
                 </div>
             </section>
             <div className="More">
-                <a href="#">View All</a>
+                <Link to="/AllProjects">View All</Link>
                 <p>&nbsp;</p>
             </div>
         </div >);

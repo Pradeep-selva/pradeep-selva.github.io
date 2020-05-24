@@ -83,6 +83,7 @@ class About extends Component {
                     </div>
                     <hr className="style"></hr>
                     <div data-aos="fade-up" className="chart-radar">
+                        <h3 class="grey-text text-darken-4">-Proficiency-</h3>
                         <XpChart />
                     </div>
                 </section>

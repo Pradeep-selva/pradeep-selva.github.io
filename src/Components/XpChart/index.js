@@ -12,11 +12,11 @@ class XpChart extends Component {
                 labels: ['Python', 'Node.js', 'C++', 'HTML', 'CSS', 'Materialize and bootstrap', 'React', 'jQuery', 'Javascript', 'MongoDB'],
                 datasets: [
                     {
-                        label: 'Proficiency',
+                        label: '',
                         backgroundColor: 'rgba(00,255,00,0.1)',
                         borderColor: '#00FF00',
                         borderWidth: 2,
-                        data: [95, 85, 85, 95, 70, 90, 75, 60, 90, 85]
+                        data: [95, 75, 80, 95, 70, 90, 68, 55, 80, 85]
                     }
                 ]
 

@@ -62,7 +62,7 @@ class Navbar extends Component {
                                 <li><Link to="/Contact">Contact</Link></li>
 
                                 <li>
-                                    <a href="https://drive.google.com/file/d/1nZZ7fS-i2wIIlNiuVm2J6lL95bGOPJwJ/view?usp=sharing">Curriculum
+                                    <a href="https://drive.google.com/file/d/1ImHq8vWA6P5DBED9SPo1wuaoU4XsaXqj/view?usp=sharing">Curriculum
                                       Vitae
                             </a>
                                 </li>
