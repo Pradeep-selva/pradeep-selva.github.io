@@ -6,6 +6,7 @@ import Home from '../Home/index'
 import Projects from '../Projects/index'
 import About from '../About/index'
 import AllProjects from '../AllProjects/index'
+import Contact from '../Contact/index'
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path="/Projects" component={Projects} />
             <Route path="/About" component={About} />
             <Route path="/AllProjects" component={AllProjects} />
+            <Route path="/Contact" component={Contact} />
           </div>
         </Router>
       </div>
