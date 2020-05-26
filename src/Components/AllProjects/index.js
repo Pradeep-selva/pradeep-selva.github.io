@@ -7,6 +7,7 @@ import { fadeInUp } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import classNames from 'classnames';
 import Loading from '../Loading/index'
+import { NavLink } from 'react-router-dom'
 
 
 const styles = StyleSheet.create({
@@ -80,11 +81,18 @@ class AllProjects extends Component {
                     error == '' ?
                         (
                             isLoaded ?
-                                <div className={projectStyle}>
-                                    <div className="row">
-                                        <ProjectList data={data} searchKey={searchKey} />
+                                <div className="afterLoad">
+                                    <div className={projectStyle} id="projects">
+                                        <div className="row">
+                                            <ProjectList data={data} searchKey={searchKey} />
+                                        </div>
                                     </div>
-                                </div> :
+                                    <div className="back">
+                                        <NavLink to="/Projects">Go Back</NavLink>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                :
                                 <Loading />
                         ) :
                         (
