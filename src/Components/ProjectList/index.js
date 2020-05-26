@@ -3,7 +3,7 @@ import './index.css'
 
 const filterfunc = () =>
     item => {
-        return item.id !== 265209848 && item.id !== 250121729
+        return true
 
     }
 
