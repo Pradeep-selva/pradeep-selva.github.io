@@ -34,7 +34,8 @@ class Navbar extends Component {
                                 <li><NavLink
                                     to="/About"
                                     className="nav-elts"
-                                    activeClassName="active">
+                                    activeClassName="active"
+                                >
                                     About
                             </NavLink></li>
                                 <li><NavLink

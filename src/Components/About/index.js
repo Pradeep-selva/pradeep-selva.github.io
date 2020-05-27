@@ -17,11 +17,11 @@ import axios from 'axios'
 const styles = StyleSheet.create({
     fadeInUp: {
         animationName: fadeInUp,
-        animationDuration: '1s'
+        animationDuration: '1.5s'
     },
     fadeInDown: {
         animationName: fadeInDown,
-        animationDuration: '1s'
+        animationDuration: '1.5s'
     }
 })
 
@@ -39,7 +39,8 @@ class About extends Component {
             gh: {},
             cf: {},
             error: '',
-            curTitle: "GitHub"
+            curTitle: "Codeforces",
+            isMounted: false
         }
 
         this.fetchCf = this.fetchCf.bind(this)
@@ -94,12 +95,17 @@ class About extends Component {
 
     componentDidMount() {
         let materialBox = document.querySelectorAll('.materialboxed');
+        M.AutoInit()
         M.Materialbox.init(materialBox, {});
         AOS.init({
             duration: 1000
         })
         this.fetchCf()
         this.fetchGh()
+        this.setState({
+            isMounted: true
+        })
+        // window.location.reload(f)
     }
 
     render() {

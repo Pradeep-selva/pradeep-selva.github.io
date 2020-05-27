@@ -6,22 +6,23 @@ import codeforcesIcon from '@iconify/icons-simple-icons/codeforces';
 
 
 
-const InfoCard = ({ cf, gh, clickCf, clickGh, curTitle }) =>
-    <div className="infocard">
+const InfoCard = ({ cf, gh, clickCf, clickGh, curTitle }) => {
+
+    return (<div className="infocard">
         <div className="row">
             <div className="col s12 l6 offset-l3">
-                <div class="card z-depth-3">
-                    <div class="card-content purple lighten-3">
+                <div class="card z-depth-4">
+                    <div class="card-content purple lighten-4">
                         {curTitle == "GitHub" ? <Icon icon={githubIcon} className="iconify" /> : <Icon icon={codeforcesIcon} className="iconify" />}
                         <h4>{curTitle}</h4>
                     </div>
                     <div class="card-tabs">
                         <ul class="tabs ">
-                            <li class="tab"><a href="#github" onClick={clickGh}>GitHub</a></li>
                             <li class="tab"><a href="#codeforces" onClick={clickCf}>Codeforces</a></li>
+                            <li class="tab"><a href="#github" onClick={clickGh}>GitHub</a></li>
                         </ul>
                     </div>
-                    <div class="card-content purple lighten-4">
+                    <div class="card-content purple lighten-5">
                         <div id="codeforces">
                             <ul style={{
                                 textAlign: 'left',
@@ -56,6 +57,8 @@ const InfoCard = ({ cf, gh, clickCf, clickGh, curTitle }) =>
                 </div>
             </div>
         </div>
-    </div>
+    </div>);
+}
+
 
 export default InfoCard;
