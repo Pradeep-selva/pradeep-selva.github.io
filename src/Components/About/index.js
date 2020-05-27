@@ -39,13 +39,28 @@ class About extends Component {
             gh: {},
             cf: {},
             error: '',
-            isLoaded: false
+            isLoaded: false,
+            curTitle: 'GitHub',
         }
 
         this.fetchCf = this.fetchCf.bind(this)
         this.fetchGh = this.fetchGh.bind(this)
         this.setCf = this.setCf.bind(this)
         this.setGh = this.setGh.bind(this)
+        this.handleCf = this.handleCf.bind(this)
+        this.handleGh = this.handleGh.bind(this)
+    }
+
+    handleCf() {
+        this.setState({
+            curTitle: 'Codeforces',
+        })
+    }
+
+    handleGh() {
+        this.setState({
+            curTitle: 'GitHub',
+        })
     }
 
     fetchCf() {
@@ -91,7 +106,12 @@ class About extends Component {
     }
 
     render() {
-        const { cf, gh, isLoaded } = this.state
+        const {
+            cf,
+            gh,
+            isLoaded,
+            curTitle
+        } = this.state
         return (
             <div className="Abouts">
                 <Navbar />
@@ -145,6 +165,9 @@ class About extends Component {
                         cf={cf}
                         gh={gh}
                         isLoaded={isLoaded}
+                        clickCf={this.handleCf}
+                        clickGh={this.handleGh}
+                        curTitle={curTitle}
                     />
                 </section>
             </div>
