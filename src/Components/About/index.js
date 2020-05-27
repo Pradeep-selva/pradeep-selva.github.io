@@ -7,9 +7,11 @@ import 'materialize-css/dist/css/materialize.min.css';
 import { fadeInUp, fadeInDown } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import XpChart from '../XpChart/index'
+import InfoCard from '../InfoCard/index'
 import classNames from 'classnames';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import axios from 'axios'
 
 
 const styles = StyleSheet.create({
@@ -30,6 +32,53 @@ const skills_section = classNames('col s12 l3 offset-l2', css(styles.fadeInUp))
 
 class About extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            gh: {},
+            cf: {},
+            error: '',
+            isLoaded: false
+        }
+
+        this.fetchCf = this.fetchCf.bind(this)
+        this.fetchGh = this.fetchGh.bind(this)
+        this.setCf = this.setCf.bind(this)
+        this.setGh = this.setGh.bind(this)
+    }
+
+    fetchCf() {
+        this.setState({ isLoaded: false })
+        axios('https://codeforces.com/api/user.info?handles=PradeepSelva')
+            .then(response => this.setCf(response.data))
+            .catch(error => this.setState({
+                error
+            }))
+    }
+
+    fetchGh() {
+        this.setState({ isLoaded: false })
+        axios('https://api.github.com/users/Pradeep-selva')
+            .then(response => this.setGh(response.data))
+            .catch(error => this.setState({
+                error
+            }))
+    }
+
+    setCf(cf) {
+        this.setState({
+            cf: cf.result[0],
+            isLoaded: true
+        })
+    }
+
+    setGh(gh) {
+        this.setState({
+            gh: gh,
+            isLoaded: true
+        })
+    }
 
     componentDidMount() {
         let materialBox = document.querySelectorAll('.materialboxed');
@@ -37,9 +86,12 @@ class About extends Component {
         AOS.init({
             duration: 1000
         })
+        this.fetchCf()
+        this.fetchGh()
     }
 
     render() {
+        const { cf, gh, isLoaded } = this.state
         return (
             <div className="Abouts">
                 <Navbar />
@@ -53,11 +105,13 @@ class About extends Component {
                         </div>
                         <div class={about_section}>
                             <h3 class="grey-text text-darken-4">-About Me-</h3>
-                            <p class="flow-text grey-text text-darken-4">
-                                Im an 18 year old college student, doing a Computer Science
-                                Engineering Degree and I'm passionate about learning and developing
-                                new things.
-                        </p>
+                            <blockquote>
+                                <p class="flow-text grey-text text-darken-4">
+                                    Im an 18 year old college student, doing a Computer Science
+                                    Engineering Degree and I'm passionate about learning and developing
+                                    new things.
+                                </p>
+                            </blockquote>
                         </div>
                         <div class={skills_section}>
                             <h3 class="grey-text text-darken-4">-Skills-</h3>
@@ -86,6 +140,12 @@ class About extends Component {
                         <h3 class="grey-text text-darken-4">-Proficiency-</h3>
                         <XpChart />
                     </div>
+                    <hr className="style"></hr>
+                    <InfoCard
+                        cf={cf}
+                        gh={gh}
+                        isLoaded={isLoaded}
+                    />
                 </section>
             </div>
         );

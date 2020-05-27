@@ -1,0 +1,12 @@
+.card-content > .active{
+    border-bottom: none;
+}
+
+.infocard{
+    border-radius: 10px;
+    padding-top: 2em;
+}
+
+.card-content> .iconify{
+    font-size: 60px;
+}
