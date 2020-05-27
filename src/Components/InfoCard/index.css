@@ -10,3 +10,8 @@
 .card-content> .iconify{
     font-size: 60px;
 }
+
+.link{
+    width:100%;
+    border-top: #8774b0 1px solid;
+}

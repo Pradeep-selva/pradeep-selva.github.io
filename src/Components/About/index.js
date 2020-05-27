@@ -39,8 +39,7 @@ class About extends Component {
             gh: {},
             cf: {},
             error: '',
-            isLoaded: false,
-            curTitle: 'GitHub',
+            curTitle: "GitHub"
         }
 
         this.fetchCf = this.fetchCf.bind(this)
@@ -84,14 +83,12 @@ class About extends Component {
     setCf(cf) {
         this.setState({
             cf: cf.result[0],
-            isLoaded: true
         })
     }
 
     setGh(gh) {
         this.setState({
             gh: gh,
-            isLoaded: true
         })
     }
 
@@ -109,7 +106,6 @@ class About extends Component {
         const {
             cf,
             gh,
-            isLoaded,
             curTitle
         } = this.state
         return (
@@ -161,14 +157,16 @@ class About extends Component {
                         <XpChart />
                     </div>
                     <hr className="style"></hr>
-                    <InfoCard
-                        cf={cf}
-                        gh={gh}
-                        isLoaded={isLoaded}
-                        clickCf={this.handleCf}
-                        clickGh={this.handleGh}
-                        curTitle={curTitle}
-                    />
+                    <div data-aos="fade-up" className="infocard">
+                        <h3>-More Info-</h3>
+                        <InfoCard
+                            cf={cf}
+                            gh={gh}
+                            clickCf={this.handleCf}
+                            clickGh={this.handleGh}
+                            curTitle={curTitle}
+                        />
+                    </div>
                 </section>
             </div>
         );
