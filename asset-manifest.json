@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.674a4e8d.chunk.css",
+    "main.js": "/static/js/main.ce1b1add.chunk.js",
+    "main.js.map": "/static/js/main.ce1b1add.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.39142cf7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.39142cf7.js.map",
+    "static/css/2.4bcb7e64.chunk.css": "/static/css/2.4bcb7e64.chunk.css",
+    "static/js/2.269ba8d4.chunk.js": "/static/js/2.269ba8d4.chunk.js",
+    "static/js/2.269ba8d4.chunk.js.map": "/static/js/2.269ba8d4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.40e999acd05415841b08b32eb1a5cfc3.js": "/precache-manifest.40e999acd05415841b08b32eb1a5cfc3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4bcb7e64.chunk.css.map": "/static/css/2.4bcb7e64.chunk.css.map",
+    "static/css/main.674a4e8d.chunk.css.map": "/static/css/main.674a4e8d.chunk.css.map",
+    "static/js/2.269ba8d4.chunk.js.LICENSE.txt": "/static/js/2.269ba8d4.chunk.js.LICENSE.txt",
+    "static/media/avatar.jpg": "/static/media/avatar.7d776870.jpg",
+    "static/media/index.css": "/static/media/background.a9d80d13.png",
+    "static/media/facedetect.png": "/static/media/facedetect.66eebd71.png",
+    "static/media/hacker-news.png": "/static/media/hacker-news.9e47750b.png",
+    "static/media/pokemon.png": "/static/media/pokemon.43ef46f2.png",
+    "static/media/pong.png": "/static/media/pong.6919d7de.png",
+    "static/media/weather.png": "/static/media/weather.f4269757.png",
+    "static/media/yelp.png": "/static/media/yelp.d90e3b47.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39142cf7.js",
+    "static/css/2.4bcb7e64.chunk.css",
+    "static/js/2.269ba8d4.chunk.js",
+    "static/css/main.674a4e8d.chunk.css",
+    "static/js/main.ce1b1add.chunk.js"
+  ]
+}
