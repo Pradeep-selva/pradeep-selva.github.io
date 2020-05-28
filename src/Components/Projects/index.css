@@ -54,7 +54,6 @@
 @media screen and (max-width: 1366px){
     .card .card-image .card-title{
     font-family: 'Jost', sans-serif;
-    font-weight: 600;
     color:#424242;
     text-shadow: 2px 4px 6px rgba(61,26,16,0.79);
 }
