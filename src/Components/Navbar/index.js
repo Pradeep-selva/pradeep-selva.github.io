@@ -55,7 +55,6 @@ class Navbar extends Component {
                                 <li><div className="user-view">
                                     <Link to="/About"><img className="circle" src={Avatar} /></Link>
                                     <Link to="/About"><span className="black-text text-lighten-2 name">Pradeep Selva</span></Link>
-                                    <Link to="/Contact"><span className="black-text text-lighten-2 email">pradeepselvaraju@gmail.com</span></Link>
                                 </div> </li>
                                 <li><Link exact to="/" to="/">Home</Link></li>
                                 <li><Link to="/Projects">Projects</Link></li>
