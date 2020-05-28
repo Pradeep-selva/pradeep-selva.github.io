@@ -68,7 +68,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 1366px){
+@media screen and (max-width: 1366px){
     #about > a{
     display: none;
 }
