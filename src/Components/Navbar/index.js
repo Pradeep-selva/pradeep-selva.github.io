@@ -11,7 +11,10 @@ class Navbar extends Component {
 
     componentDidMount() {
         let sidenav = document.querySelector('#mobile-menu');
-        M.Sidenav.init(sidenav, {});
+        M.Sidenav.init(sidenav, {
+            closeOnClick: true,
+            draggable: true
+        });
     }
 
     render() {
@@ -51,7 +54,7 @@ class Navbar extends Component {
                                     Contact
                             </NavLink></li>
                             </ul>
-                            <ul className="sidenav grey lighten-2" id="mobile-menu">
+                            <ul className="sidenav sidenav-close grey lighten-2" id="mobile-menu">
                                 <li><div className="user-view">
                                     <Link to="/About"><img className="circle" src={Avatar} /></Link>
                                     <Link to="/About"><span className="black-text text-lighten-2 name">Pradeep Selva</span></Link>
