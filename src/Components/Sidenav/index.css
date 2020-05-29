@@ -29,3 +29,9 @@
 .btn:hover{
     color:white;
 } */
+
+@media screen and (max-width: 660px){
+    .sidenavigation{
+        display:none;
+    }
+}

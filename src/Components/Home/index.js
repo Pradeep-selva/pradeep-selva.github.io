@@ -21,7 +21,7 @@ const Home = () =>
                     </Typist>
                 </div>
             </div>
-            <div id="about" className="hide-on-med-and-down">
+            <div id="about">
                 <Link to="/About">About Me</Link>
             </div>
         </div>

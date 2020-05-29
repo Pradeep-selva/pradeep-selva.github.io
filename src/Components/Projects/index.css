@@ -51,7 +51,7 @@
     padding-bottom:5%;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1680px){
     .card .card-image .card-title{
     font-family: 'Jost', sans-serif;
     color:#424242;
