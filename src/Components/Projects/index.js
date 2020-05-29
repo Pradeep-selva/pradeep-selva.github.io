@@ -49,7 +49,7 @@ class Projects extends Component {
             </div>
             <section className="container section" id="projects">
                 <div className="row">
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle} >
                             <div className="card-image">
                                 <img src={FaceDetect} alt="face-detect" className="z-depth-3 responsive-img materialboxed" />
@@ -67,7 +67,7 @@ class Projects extends Component {
                         </div>
                     </div>
 
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Weather} alt="weather" className="z-depth-3 responsive-img materialboxed" />
@@ -85,7 +85,7 @@ class Projects extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Pong} alt="pong" className="z-depth-3 responsive-img materialboxed" />
@@ -105,7 +105,7 @@ class Projects extends Component {
                 </div>
 
                 <div className="row">
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Pokemon} alt="pokemon" className="z-depth-3 responsive-img materialboxed" />
@@ -124,7 +124,7 @@ class Projects extends Component {
                         </div>
                     </div>
 
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={Yelp} alt="yelp" className="z-depth-3 responsive-img materialboxed" id="yelp" />
@@ -143,7 +143,7 @@ class Projects extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col s12 l4">
+                    <div className="col s12 m4 l4">
                         <div className={cardStyle}>
                             <div className="card-image">
                                 <img src={HackerNews} alt="hacker-news" className="z-depth-3 responsive-img materialboxed" />
