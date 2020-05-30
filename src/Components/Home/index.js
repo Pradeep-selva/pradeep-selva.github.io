@@ -27,7 +27,7 @@ const Home = () =>
             </div>
         </div>
         <Sidenav />
-        {/* <BottomNav /> */}
+        <BottomNav />
         <Foot />
     </div>
 
