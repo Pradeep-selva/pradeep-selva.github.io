@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Sidenav from '../Sidenav/index';
 import Navbar from '../Navbar/index';
 import Foot from '../Footer/index';
+import BottomNav from '../BottomNav/index';
 
 
 const Home = () =>
@@ -26,6 +27,7 @@ const Home = () =>
             </div>
         </div>
         <Sidenav />
+        {/* <BottomNav /> */}
         <Foot />
     </div>
 

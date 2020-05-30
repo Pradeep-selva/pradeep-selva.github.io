@@ -1,0 +1,17 @@
+@media screen and (min-width:660px){
+    .b-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:660px){
+    .b-nav{
+    display:flex;
+    flex-direction: row;
+    flex-grow: 1;
+    position:fixed;
+    overflow:hidden;
+    bottom:20px;
+    width:100%;
+}
+}
