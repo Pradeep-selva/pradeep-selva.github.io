@@ -28,3 +28,9 @@ hr.style {
 .infocard{
     margin-bottom: 5%;
 }
+
+@media only screen and (max-width:1366px){
+    .rounded{
+        height:150px;
+    }
+}
