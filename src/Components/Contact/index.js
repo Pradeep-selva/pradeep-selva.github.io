@@ -100,7 +100,7 @@ class Contact extends Component {
                                             </div>
                                             <div className="input-field col s6">
                                                 <input id="company_name" name="company_name" type="text" className="validate" onChange={this.handleChange} />
-                                                <label for="company_name">Company Name</label>
+                                                <label for="company_name">Company</label>
                                             </div>
                                         </div>
                                         <div className="row">
