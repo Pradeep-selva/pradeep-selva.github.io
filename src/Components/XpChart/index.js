@@ -16,7 +16,7 @@ class XpChart extends Component {
                         backgroundColor: 'rgba(00,255,00,0.1)',
                         borderColor: '#00FF00',
                         borderWidth: 2,
-                        data: [95, 75, 80, 95, 70, 90, 68, 55, 80, 85]
+                        data: [95, 75, 80, 95, 70, 90, 78, 55, 80, 85]
                     }
                 ]
 

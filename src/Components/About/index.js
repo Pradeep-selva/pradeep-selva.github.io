@@ -141,19 +141,13 @@ class About extends Component {
                                 <li>○ Python</li>
                                 <li>○ Javascript</li>
                                 <li>○ C++</li>
-                                <li>○ Java</li>
+                                <li>○ React</li>
                                 <li>○ HTML</li>
                                 <li>○ CSS</li>
-                                <li>○ Selenium Automation</li>
                                 <li>○ MongoDB</li>
                                 <li>○ Firebase</li>
-                                <li>○ Bootstrap</li>
-                                <li>○ jQuery</li>
-                                <li>○ Materialize CSS</li>
                                 <li>○ Node.js</li>
                                 <li>○ Tensorflow</li>
-                                <li>○ Keras</li>
-
                             </ul>
                         </div>
                     </div>
