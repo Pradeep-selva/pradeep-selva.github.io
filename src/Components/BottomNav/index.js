@@ -8,7 +8,7 @@ const BottomNav = () =>
             >
                 <i className="icon fab fa-github"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1ImHq8vWA6P5DBED9SPo1wuaoU4XsaXqj/view?usp=sharing"
+            <a href="https://drive.google.com/file/d/1Qy3h6hbjWIF7NwkdjdNRPFXMtd7Z2uAf/view?usp=sharing"
                 className="bnav-elt icons">
                 <i className="icon far fa-file-pdf"></i>
             </a>

@@ -12,7 +12,7 @@ const Sidenav = () =>
                 </a>
             </li>
             <li>
-                <a href="https://drive.google.com/file/d/1ImHq8vWA6P5DBED9SPo1wuaoU4XsaXqj/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1Qy3h6hbjWIF7NwkdjdNRPFXMtd7Z2uAf/view?usp=sharing"
                     className="sidenav-elt btn-floating grey darken-3 icons" data-tip="Curriculum Vitae">
                     <i className="icon far fa-file-pdf"></i>
                 </a>
