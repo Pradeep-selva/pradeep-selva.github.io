@@ -9,14 +9,14 @@ class XpChart extends Component {
 
         this.state = {
             data: {
-                labels: ['Python', 'Node.js', 'C++', 'HTML', 'CSS', 'Materialize and bootstrap', 'React', 'jQuery', 'Javascript', 'MongoDB'],
+                labels: ['Python', 'Node.js', 'C++', 'HTML', 'CSS', 'Materialize and bootstrap', 'React', 'Firebase', 'Javascript', 'MongoDB'],
                 datasets: [
                     {
                         label: '',
                         backgroundColor: 'rgba(00,255,00,0.1)',
                         borderColor: '#00FF00',
                         borderWidth: 2,
-                        data: [95, 75, 80, 95, 70, 90, 78, 55, 80, 85]
+                        data: [95, 80, 70, 95, 65, 90, 90, 60, 80, 75]
                     }
                 ]
 
