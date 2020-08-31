@@ -3,7 +3,7 @@ import "./index.css";
 import { Link, NavLink } from "react-router-dom";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
-import { RouteNames } from "../../Configs";
+import { RouteNames, navbar } from "../../Configs";
 import { Images } from "../../Shared";
 
 class Navbar extends Component {
@@ -37,43 +37,18 @@ class Navbar extends Component {
                 id='nav-mobile'
                 className='nav-elts right hide-on-med-and-down'
               >
-                <li>
-                  <NavLink
-                    exact
-                    to={RouteNames.HOME}
-                    className='nav-elts'
-                    activeClassName='active'
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={RouteNames.ABOUT}
-                    className='nav-elts'
-                    activeClassName='active'
-                  >
-                    About
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={RouteNames.PROJECTS}
-                    className='nav-elts'
-                    activeClassName='active'
-                  >
-                    Projects
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={RouteNames.CONTACT}
-                    className='nav-elts'
-                    activeClassName='active'
-                  >
-                    Contact
-                  </NavLink>
-                </li>
+                {navbar.map((link) => (
+                  <li>
+                    <NavLink
+                      exact
+                      to={link.to}
+                      className='nav-elts'
+                      activeClassName='active'
+                    >
+                      {link.name}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
               <ul
                 className='sidenav sidenav-close grey lighten-2'
@@ -98,20 +73,13 @@ class Navbar extends Component {
                     </Link>
                   </div>{" "}
                 </li>
-                <li>
-                  <Link exact to={RouteNames.HOME}>
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to={RouteNames.PROJECTS}>Projects</Link>
-                </li>
-                <li>
-                  <Link to={RouteNames.ABOUT}>About</Link>
-                </li>
-                <li>
-                  <Link to={RouteNames.CONTACT}>Contact</Link>
-                </li>
+                {navbar.map((link) => (
+                  <li>
+                    <Link exact to={link.to}>
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
