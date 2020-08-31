@@ -5,7 +5,7 @@ import { StyleSheet, css } from "aphrodite";
 import "./index.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
-import Navbar from "../../Components/Navbar/index";
+import { Navbar } from "../../Components";
 import "react-medium-image-zoom/dist/styles.css";
 import { Project } from "../../Shared";
 import AOS from "aos";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import Navbar from "../../Components/Navbar/index";
+import { Navbar } from "../../Components";
 import classNames from "classnames";
 import { bounceInUp } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
@@ -12,10 +12,7 @@ const styles = StyleSheet.create({
   }
 });
 
-const formStyle = classNames(
-  "col s12 formstyle black-text",
-  css(styles.bounceInUp)
-);
+const formStyle = classNames("formstyle black-text", css(styles.bounceInUp));
 
 class Contact extends Component {
   constructor(props) {

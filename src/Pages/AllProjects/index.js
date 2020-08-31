@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import Navbar from "../Navbar/index";
 import "./index.css";
 import axios from "axios";
-import ProjectList from "../ProjectList/index";
 import { fadeInUp } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
 import classNames from "classnames";
-import Loading from "../Loading/index";
+import { Navbar, ProjectList, Loading } from "../../Components";
 import { RouteNames } from "../../Configs";
 import { NavLink } from "react-router-dom";
 
