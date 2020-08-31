@@ -1,60 +1,80 @@
-.card-title{
-    font-family: 'Jost', sans-serif;
-    font-weight: 600;
-    color:#eceff1;
-    text-shadow: 2px 4px 6px rgba(61,26,16,0.79);
+.card-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: #eceff1;
+  text-shadow: 2px 4px 6px rgba(61, 26, 16, 0.79);
 }
 
-.card-content{
-    font-family: 'Jost',sans-serif;
-    font-weight: 400;
-    color:#212121;
-    font-size: 1.3em;
+.card-content {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  color: #212121;
+  font-size: 1.3em;
 }
 
-.card-image{
-    height:345px;
-    
+.card-image {
+  height: 345px;
 }
 
-.More > a{
-    background: rgb(20,8,51);
-    background: linear-gradient(90deg, rgba(20,8,51,1) 0%, rgba(95,15,124,1) 51%, rgba(166,0,255,1) 100%);
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 5%;
-    border: 1.6px grey solid;
-    padding-right: 5%;
-    margin-top: 3%;
-    border-radius: 5px 25px;
-    color: blanchedalmond;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+.card {
+  height: 35rem;
 }
 
-#yelp{
-    height:230px;
-}
-#semi-round{
-    border-radius:50%;
-    height:250px;
-    width:250px;
+.More > a {
+  background: rgb(20, 8, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(20, 8, 51, 1) 0%,
+    rgba(95, 15, 124, 1) 51%,
+    rgba(166, 0, 255, 1) 100%
+  );
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  border: 1.6px grey solid;
+  padding-right: 5%;
+  margin-top: 3%;
+  border-radius: 5px 25px;
+  color: blanchedalmond;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-#weather{
+#yelp {
+  height: 230px;
+}
+#semi-round {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+#weather {
+  color: #424242;
+}
+
+#about {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 650px) {
+  .card {
+    height: 50rem;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .card .card-image .card-title {
+    font-family: "Jost", sans-serif;
     color: #424242;
-}
-
-#about{
-    padding-top: 10%;
-    padding-bottom:5%;
-}
-
-@media screen and (max-width: 1680px){
-    .card .card-image .card-title{
-    font-family: 'Jost', sans-serif;
-    color:#424242;
-    text-shadow: 2px 4px 6px rgba(61,26,16,0.79);
-}
+    text-shadow: 2px 4px 6px rgba(61, 26, 16, 0.79);
+  }
 }
