@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
-import Navbar from "../Navbar/index";
+import Navbar from "../../Components/Navbar/index";
 import classNames from "classnames";
 import { bounceInUp } from "react-animations";
 import { StyleSheet, css } from "aphrodite";

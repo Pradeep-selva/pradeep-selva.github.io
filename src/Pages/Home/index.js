@@ -3,10 +3,10 @@ import "./index.css";
 import Typist from "react-typist";
 import { Link } from "react-router-dom";
 import { RouteNames } from "../../Configs";
-import Sidenav from "../Sidenav/index";
-import Navbar from "../Navbar/index";
-import Foot from "../Footer/index";
-import BottomNav from "../BottomNav/index";
+import Sidenav from "../../Components/Sidenav/index";
+import Navbar from "../../Components/Navbar/index";
+import Foot from "../../Components/Footer/index";
+import BottomNav from "../../Components/BottomNav/index";
 
 const Home = () => (
   <div className='home'>

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import Navbar from "../Navbar/index";
+import Navbar from "../../Components/Navbar/index";
 import { Images } from "../../Shared";
 import "./index.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 import { fadeInUp, fadeInDown } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
-import XpChart from "../XpChart/index";
-import InfoCard from "../InfoCard/index";
+import XpChart from "../../Components/XpChart/index";
+import InfoCard from "../../Components/InfoCard/index";
 import classNames from "classnames";
 import AOS from "aos";
 import "aos/dist/aos.css";
