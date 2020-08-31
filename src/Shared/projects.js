@@ -1,4 +1,4 @@
-export const Projects = {
+export const Project = {
   arcadia: require("../Assets/Projects/arcadia.jpg"),
   connecsoc: require("../Assets/Projects/connecsoc.png"),
   facedetect: require("../Assets/Projects/facedetect.png"),
