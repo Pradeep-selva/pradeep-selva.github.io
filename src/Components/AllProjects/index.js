@@ -8,7 +8,7 @@ import { StyleSheet, css } from "aphrodite";
 import classNames from "classnames";
 import Loading from "../Loading/index";
 import { RouteNames } from "../../Configs";
-import { NavLink, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const styles = StyleSheet.create({
   fadeInUp: {
@@ -72,7 +72,7 @@ class AllProjects extends Component {
             </div>
           </div>
         </div>
-        {error == "" ? (
+        {error === "" ? (
           isLoaded ? (
             <div className='afterLoad'>
               <div className={projectStyle} id='projects'>

@@ -21,13 +21,17 @@ class Navbar extends Component {
         <nav>
           <div className='nav-wrapper'>
             <div className='container'>
-              <a href='' className='sidenav-trigger' data-target='mobile-menu'>
+              <a
+                href='/#'
+                className='sidenav-trigger'
+                data-target='mobile-menu'
+              >
                 <i id='hamburger' className='material-icons'>
                   menu
                 </i>
               </a>
               <Link to='/' className='brand-logo'>
-                <img src={Images.logo}></img>
+                <img src={Images.logo} alt='logo'></img>
               </Link>
               <ul
                 id='nav-mobile'
@@ -78,12 +82,16 @@ class Navbar extends Component {
                 <li>
                   <div className='user-view'>
                     <div class='background'>
-                      <img src={Images.sidenavBg} />
+                      <img src={Images.sidenavBg} alt='sidenav background' />
                     </div>
-                    <Link to='/About'>
-                      <img className='circle z-depth-5' src={Images.avatar} />
+                    <Link to={RouteNames.About}>
+                      <img
+                        className='circle z-depth-5'
+                        src={Images.avatar}
+                        alt='avatar'
+                      />
                     </Link>
-                    <Link to='/About'>
+                    <Link to={RouteNames.About}>
                       <span className='white-text text-lighten-2 name'>
                         Pradeep Selva
                       </span>
@@ -91,7 +99,7 @@ class Navbar extends Component {
                   </div>{" "}
                 </li>
                 <li>
-                  <Link exact to={RouteNames.HOME} to='/'>
+                  <Link exact to={RouteNames.HOME}>
                     Home
                   </Link>
                 </li>
