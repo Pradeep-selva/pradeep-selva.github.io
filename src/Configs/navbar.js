@@ -14,6 +14,10 @@ export const navbar = [
     to: RouteNames.PROJECTS
   },
   {
+    name: "Blogs",
+    to: RouteNames.BLOGS
+  },
+  {
     name: "Contact",
     to: RouteNames.CONTACT
   }

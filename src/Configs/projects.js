@@ -24,11 +24,11 @@ export const projects = [
       "A server specific general purpose discord bot built with discord.py that has a userbase of over 1k people.\n\n\n"
   },
   {
-    title: "Hacker News Clone",
-    repoLink: "https://github.com/Pradeep-selva/hacker-news-clone",
-    thumbnail: Project.hackerNews,
+    title: "Readers Inventory",
+    repoLink: "https://github.com/Pradeep-selva/readers-inventory",
+    thumbnail: Project.readersInv,
     description:
-      "A web app built using React that can be used to fetch and read tech related news from over the internet.\n\n\n"
+      "This a website where you can add details of your favorite books, and manage them. Stay organised with your book lists and always find something new to read as others add books"
   },
   {
     title: "Face and Eye Detector",

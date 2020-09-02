@@ -3,5 +3,6 @@ export const RouteNames = {
   PROJECTS: "/projects",
   ABOUT: "/about",
   ALLPROJECTS: "/project/all",
-  CONTACT: "/contact"
+  CONTACT: "/contact",
+  BLOGS: "/blogs"
 };
