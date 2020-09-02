@@ -1,7 +1,24 @@
 import React from "react";
 import axios from "axios";
+import classNames from "classnames";
+import { fadeInLeftBig, fadeInUp } from "react-animations";
+import { StyleSheet, css } from "aphrodite";
 import { Navbar, Loading } from "../../Components";
 import "./index.css";
+
+const styles = StyleSheet.create({
+  fadeInLeftBig: {
+    animationName: fadeInLeftBig,
+    animationDuration: "1s"
+  },
+  fadeInUp: {
+    animationName: fadeInUp,
+    animationDuration: "1s"
+  }
+});
+
+const bioStyle = classNames("card", css(styles.fadeInLeftBig));
+const blogStyle = classNames("card horizontal", css(styles.fadeInUp));
 
 class Blog extends React.Component {
   state = {
@@ -37,7 +54,7 @@ class Blog extends React.Component {
             <div className='row'>
               <div className='center-align'>
                 <div className='col xl3 l4 s10 offset-s1'>
-                  <div className='card'>
+                  <div className={bioStyle}>
                     <div className='card-image'>
                       <img
                         src={data.feed.image}
@@ -67,7 +84,7 @@ class Blog extends React.Component {
                 <div className='row'>
                   {data.items.map((blog) => (
                     <div className='col s12' key={blog.guid}>
-                      <div class='card horizontal'>
+                      <div className={blogStyle}>
                         <div className='card-stacked'>
                           <div className='card-content'>
                             <h4 className='blog-title'>{blog.title}</h4>
