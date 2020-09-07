@@ -140,15 +140,17 @@ class About extends Component {
               <h3 class='grey-text text-darken-4'>-Skills-</h3>
               <ul class='flow-text grey-text text-darken-4' id='skills'>
                 <li>○ Python</li>
+                <li>○ Typescript</li>
                 <li>○ Javascript</li>
                 <li>○ C++</li>
                 <li>○ React</li>
-                <li>○ HTML</li>
-                <li>○ CSS</li>
-                <li>○ MongoDB</li>
-                <li>○ Firebase</li>
+                <li>○ Redux</li>
+                <li>○ GraphQL</li>
                 <li>○ Node.js</li>
-                <li>○ Tensorflow</li>
+                <li>○ HTML//CSS</li>
+                <li>○ MongoDB</li>
+                <li>○ DynamoDB</li>
+                <li>○ Firebase</li>
               </ul>
             </div>
           </div>
