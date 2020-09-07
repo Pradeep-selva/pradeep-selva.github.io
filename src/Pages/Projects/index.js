@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classNames from "classnames";
+import { withGetScreen } from "react-getscreen";
 import { fadeInUp, fadeInDown } from "react-animations";
 import { StyleSheet, css } from "aphrodite";
 import "./index.css";
@@ -35,6 +36,7 @@ class Projects extends Component {
   }
 
   render() {
+    console.log(this.props.isTablet());
     return (
       <div className='projects'>
         <Navbar />
@@ -44,11 +46,21 @@ class Projects extends Component {
         <section className='container section' id='projects'>
           <div className='row'>
             {projects.map((project) => (
-              <div className='col s12 m4 l4'>
+              <div className='col s12 m6 l4'>
                 <div className={cardStyle}>
                   <div className='card-image'>
                     <img
-                      src={project.thumbnail}
+                      src={
+                        project.thumbnail[
+                          `${
+                            this.props.isDesktop()
+                              ? "pc"
+                              : this.props.isMobile()
+                              ? "mobile"
+                              : "tab"
+                          }`
+                        ]
+                      }
                       alt={project.title}
                       className='z-depth-3 responsive-img materialboxed'
                       id={project.id && "yelp"}
@@ -83,4 +95,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default withGetScreen(Projects, { mobileLimit: 600, tabletLimit: 820 });
