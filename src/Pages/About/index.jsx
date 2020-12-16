@@ -144,6 +144,7 @@ class About extends Component {
                 <li>○ Javascript</li>
                 <li>○ C++</li>
                 <li>○ React</li>
+                <li>○ React Native</li>
                 <li>○ Redux</li>
                 <li>○ GraphQL</li>
                 <li>○ Node.js</li>
