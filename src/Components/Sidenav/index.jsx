@@ -76,7 +76,7 @@ class Sidenav extends React.Component {
           </div>
           <div class='modal-footer'>
             <a
-              href='https://drive.google.com/file/d/1UF2VIdJ9KyuJDV5nKPs6zj8pVF1NV4hi/view?usp=sharing'
+              href='https://resume.io/r/k0o2OKkhu'
               class='modal-close waves-effect waves-green btn-flat'
               target='_blank'
               rel='noopener noreferrer'
