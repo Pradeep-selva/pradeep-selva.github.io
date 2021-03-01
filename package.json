@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "aphrodite": "^2.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "classnames": "^2.2.6",
     "env-cmd": "^10.1.0",
