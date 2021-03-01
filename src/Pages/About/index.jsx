@@ -130,9 +130,10 @@ class About extends Component {
               <h3 class='grey-text text-darken-4'>-About Me-</h3>
               <blockquote>
                 <p class='flow-text grey-text text-darken-4'>
-                  Im an 18 year old college student, doing a Computer Science
-                  Engineering Degree and I'm passionate about learning and
-                  developing new things.
+                  Enthusiastic junior developer with broad technical exposure,
+                  good communication skills and utmost professionalism. Deep
+                  knowledge of Python, Javascript, Go and Git development
+                  environments.
                 </p>
               </blockquote>
             </div>
@@ -140,11 +141,12 @@ class About extends Component {
               <h3 class='grey-text text-darken-4'>-Skills-</h3>
               <ul class='flow-text grey-text text-darken-4' id='skills'>
                 <li>○ Python</li>
-                <li>○ Typescript</li>
-                <li>○ Javascript</li>
+                <li>○ Typescript/Javascript</li>
+                <li>○ Go</li>
                 <li>○ C++</li>
-                <li>○ React</li>
-                <li>○ React Native</li>
+                <li>○ React/React Native</li>
+                <li>○ Vue</li>
+                <li>○ Svelte</li>
                 <li>○ Redux</li>
                 <li>○ GraphQL</li>
                 <li>○ Node.js</li>
