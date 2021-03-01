@@ -129,7 +129,10 @@ class About extends Component {
             <div class={about_section}>
               <h3 class='grey-text text-darken-4'>-About Me-</h3>
               <blockquote>
-                <p class='flow-text grey-text text-darken-4'>
+                <p
+                  class='flow-text grey-text text-darken-4'
+                  style={{ textAlign: "left" }}
+                >
                   Enthusiastic junior developer with broad technical exposure,
                   good communication skills and utmost professionalism. Deep
                   knowledge of Python, Javascript, Go and Git development
