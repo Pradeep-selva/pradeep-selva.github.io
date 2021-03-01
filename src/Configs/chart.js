@@ -1,16 +1,17 @@
 export const chartStats = {
   labels: [
     "Python",
-    "Node.js",
-    "C++",
-    "HTML",
-    "CSS",
+    "Go",
     "Typescript",
-    "React",
-    "Firebase",
     "Javascript",
+    "React",
+    "Svelte",
+    "Vue",
+    "React Native",
+    "Firebase",
     "MongoDB",
-    "React Native"
+    "SQL",
+    "HTML/CSS"
   ],
   datasets: [
     {
@@ -18,7 +19,7 @@ export const chartStats = {
       backgroundColor: "rgba(00,255,00,0.1)",
       borderColor: "#00FF00",
       borderWidth: 2,
-      data: [95, 80, 70, 95, 65, 70, 95, 75, 80, 75, 80]
+      data: [95, 70, 90, 95, 95, 85, 70, 85, 85, 75, 70, 90]
     }
   ]
 };
