@@ -10,6 +10,8 @@ import classNames from "classnames";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
+import { getAboutContent } from "../../Api";
+import { STATUS_SUCCESS } from "../../Configs";
 
 const styles = StyleSheet.create({
   fadeInUp: {
@@ -38,7 +40,9 @@ class About extends Component {
       cf: {},
       error: "",
       curTitle: "Codeforces",
-      isMounted: false
+      isMounted: false,
+      description: "",
+      skills: []
     };
 
     this.fetchCf = this.fetchCf.bind(this);
@@ -60,6 +64,16 @@ class About extends Component {
       curTitle: "GitHub"
     });
   }
+
+  fetchAbout = () => {
+    getAboutContent()
+      .then(({ data: { description, skills }, statusCode }) => {
+        if (statusCode === STATUS_SUCCESS) {
+          this.setState({ description, skills });
+        }
+      })
+      .catch(console.log);
+  };
 
   fetchCf() {
     this.setState({ isLoaded: false });
@@ -104,14 +118,14 @@ class About extends Component {
     });
     this.fetchCf();
     this.fetchGh();
+    this.fetchAbout();
     this.setState({
       isMounted: true
     });
-    // window.location.reload(f)
   }
 
   render() {
-    const { cf, gh, curTitle } = this.state;
+    const { cf, gh, curTitle, description, skills } = this.state;
     return (
       <div className='Abouts'>
         <Navbar />
@@ -133,30 +147,16 @@ class About extends Component {
                   class='flow-text grey-text text-darken-4'
                   style={{ textAlign: "left" }}
                 >
-                  Enthusiastic junior developer with broad technical exposure,
-                  good communication skills and utmost professionalism. Deep
-                  knowledge of Python, Javascript, Go and Git development
-                  environments.
+                  {description}
                 </p>
               </blockquote>
             </div>
             <div class={skills_section}>
               <h3 class='grey-text text-darken-4'>-Skills-</h3>
               <ul class='flow-text grey-text text-darken-4' id='skills'>
-                <li>○ Python</li>
-                <li>○ Typescript/Javascript</li>
-                <li>○ Go</li>
-                <li>○ C++</li>
-                <li>○ React/React Native</li>
-                <li>○ Vue</li>
-                <li>○ Svelte</li>
-                <li>○ Redux</li>
-                <li>○ GraphQL</li>
-                <li>○ Node.js</li>
-                <li>○ HTML//CSS</li>
-                <li>○ MongoDB</li>
-                <li>○ DynamoDB</li>
-                <li>○ Firebase</li>
+                {skills.map((skill) => (
+                  <li>○ {skill}</li>
+                ))}
               </ul>
             </div>
           </div>
