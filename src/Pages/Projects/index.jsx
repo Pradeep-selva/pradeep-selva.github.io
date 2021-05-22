@@ -9,8 +9,9 @@ import { Navbar } from "../../Components";
 import "react-medium-image-zoom/dist/styles.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { RouteNames, projects } from "../../Configs";
+import { RouteNames, STATUS_SUCCESS } from "../../Configs";
 import { Link } from "react-router-dom";
+import { getProjects } from "../../Api";
 
 const styles = StyleSheet.create({
   fadeInUp: {
@@ -26,15 +27,37 @@ const styles = StyleSheet.create({
 const cardStyle = classNames("card", css(styles.fadeInUp));
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      projects: []
+    };
+  }
+
+  fetchProjects = () =>
+    getProjects()
+      .then(({ data: { content }, statusCode }) => {
+        if (statusCode === STATUS_SUCCESS) {
+          this.setState({
+            projects: JSON.parse(content)
+          });
+        }
+      })
+      .catch(console.log);
+
   componentDidMount() {
     let materialBox = document.querySelectorAll(".materialboxed");
     M.Materialbox.init(materialBox, {});
     AOS.init({
       duration: 1000
     });
+    this.fetchProjects();
   }
 
   render() {
+    const { projects } = this.state;
+
     return (
       <div className='projects'>
         <Navbar />
