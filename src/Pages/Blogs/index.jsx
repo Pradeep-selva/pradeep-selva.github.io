@@ -90,10 +90,7 @@ class Blog extends React.Component {
                             <h4 className='blog-title'>{blog.title}</h4>
                             <h6>Published on {blog.pubDate.slice(0, 10)}</h6>
                             <p>
-                              {this.htmlToText(data.items[0].description).slice(
-                                0,
-                                200
-                              )}
+                              {this.htmlToText(blog.description).slice(0, 300)}
                               ...
                             </p>
                           </div>
