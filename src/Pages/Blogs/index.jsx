@@ -36,6 +36,7 @@ class Blog extends React.Component {
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@pradeepselvaraju"
     )
       .then((response) => {
+        console.log("rs", response);
         this.setState({
           data: response.data
         });
@@ -90,7 +91,14 @@ class Blog extends React.Component {
                             <h4 className='blog-title'>{blog.title}</h4>
                             <h6>Published on {blog.pubDate.slice(0, 10)}</h6>
                             <p>
-                              {this.htmlToText(blog.description).slice(0, 300)}
+                              {this.htmlToText(blog.description)
+                                .slice(
+                                  this.htmlToText(blog.description)?.indexOf(
+                                    "Unsplash"
+                                  ) + 8,
+                                  this.htmlToText(blog.description)?.length
+                                )
+                                .slice(0, 300)}
                               ...
                             </p>
                           </div>
