@@ -36,7 +36,6 @@ class Blog extends React.Component {
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@pradeepselvaraju"
     )
       .then((response) => {
-        console.log("rs", response);
         this.setState({
           data: response.data
         });
@@ -50,7 +49,6 @@ class Blog extends React.Component {
       return (
         <>
           <Navbar />
-          {/* <h6>{this.htmlToText(data.items[0].description).slice(0, 200)}...</h6> */}
           <div className='blogs container'>
             <div className='row'>
               <div className='center-align'>
@@ -83,38 +81,44 @@ class Blog extends React.Component {
               <div className='col l8 s12'>
                 <h1 className='header'>{data.feed.title}</h1>
                 <div className='row'>
-                  {data.items.map((blog) => (
-                    <div className='col s12' key={blog.guid}>
-                      <div className={blogStyle}>
-                        <div className='card-stacked'>
-                          <div className='card-content'>
-                            <h4 className='blog-title'>{blog.title}</h4>
-                            <h6>Published on {blog.pubDate.slice(0, 10)}</h6>
-                            <p>
-                              {this.htmlToText(blog.description)
-                                .slice(
-                                  this.htmlToText(blog.description)?.indexOf(
-                                    "Unsplash"
-                                  ) + 8,
-                                  this.htmlToText(blog.description)?.length
-                                )
-                                .slice(0, 300)}
-                              ...
-                            </p>
-                          </div>
-                          <div className='card-action'>
-                            <a
-                              href={blog.link}
-                              target='_blank'
-                              rel='noreferrer noopener'
-                            >
-                              View Full Article
-                            </a>
+                  {data.items.map(
+                    ({ description, guid, title, pubDate, link }) => {
+                      const textDescription = this.htmlToText(description);
+                      const findWord = "Unsplash";
+                      const descriptionToDisplay = textDescription
+                        ?.slice(
+                          textDescription?.indexOf(findWord) + findWord.length,
+                          textDescription?.length
+                        )
+                        .slice(0, 300);
+
+                      return (
+                        <div className='col s12' key={guid}>
+                          <div className={blogStyle}>
+                            <div className='card-stacked'>
+                              <div className='card-content'>
+                                <h4 className='blog-title'>{title}</h4>
+                                <h6>Published on {pubDate.slice(0, 10)}</h6>
+                                <p>
+                                  {descriptionToDisplay}
+                                  ...
+                                </p>
+                              </div>
+                              <div className='card-action'>
+                                <a
+                                  href={link}
+                                  target='_blank'
+                                  rel='noreferrer noopener'
+                                >
+                                  View Full Article
+                                </a>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  ))}
+                      );
+                    }
+                  )}
                 </div>
               </div>
             </div>
