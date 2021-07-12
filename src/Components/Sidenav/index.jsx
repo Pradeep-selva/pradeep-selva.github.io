@@ -1,7 +1,5 @@
 import React from "react";
 import "./index.css";
-import { Images } from "../../Shared";
-import ReactTooltip from "react-tooltip";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -27,7 +25,7 @@ class Sidenav extends React.Component {
           </li>
           <li>
             <a
-              href='/#'
+              href='/resume.pdf'
               data-target='modal1'
               className='sidenav-elt btn-floating grey darken-3 icons modal-trigger'
               data-tip='Resume'
@@ -64,31 +62,6 @@ class Sidenav extends React.Component {
             </a>
           </li>
         </ul>
-        <div
-          ref={(Modal) => {
-            this.Modal = Modal;
-          }}
-          id='modal1'
-          class='modal'
-        >
-          <div class='modal-content'>
-            <img src={Images.resume} alt='resume' className='resume' />
-          </div>
-          <div class='modal-footer'>
-            <a
-              href='https://resume.io/r/k0o2OKkhu'
-              class='modal-close waves-effect waves-green btn-flat'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              View Full Resume
-            </a>
-            <a href='#!' class='modal-close waves-effect waves-green btn-flat'>
-              Close
-            </a>
-          </div>
-        </div>
-        <ReactTooltip place='left' />
       </div>
     );
   }
