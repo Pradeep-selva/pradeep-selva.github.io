@@ -4,5 +4,4 @@ export const Images = {
   cf: require("../Assets/Images/cf.png"),
   logo: require("../Assets/Images/logo.png"),
   sidenavBg: require("../Assets/Images/sidenav-bg.jpg"),
-  resume: require("../Assets/Images/resume.png")
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import ReactTooltip from "react-tooltip";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "materialize-css/dist/css/materialize.min.css";
 
@@ -62,6 +63,7 @@ class Sidenav extends React.Component {
             </a>
           </li>
         </ul>
+        <ReactTooltip place='left' />
       </div>
     );
   }
